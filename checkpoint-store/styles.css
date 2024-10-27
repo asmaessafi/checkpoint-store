@@ -1,0 +1,342 @@
+ body {
+     background-image: url(assets/bg.jpg);
+     background-repeat: no-repeat;
+     background-position: right;
+     background-attachment: fixed;
+     background-color: black;
+
+ }
+
+ /* ************************* navbar ************************* */
+ nav {
+     background-color: rgb(51, 159, 159);
+     border: 3px double rgb(88, 246, 233);
+     border-radius: 25px;
+     padding: 10px;
+     margin: 10px;
+     height: 40px;
+ }
+
+ .flex-1 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ .flex-2 {
+     display: flex;
+
+ }
+
+ .flex-3 {
+     display: flex;
+     align-items: center;
+
+ }
+
+ #sparkle {
+     font-family:cursive;
+     font-style: italic;
+
+
+ }
+
+ ul li {
+     padding-left: 17px;
+     font-size:x-large;
+     color: black;
+     
+ }
+ .link{
+    text-decoration: underline;
+ }
+ ul .link:hover{
+    color: rgba(59, 58, 58, 0.885);
+
+ }
+
+ #Categories {
+     background-color: black;
+     color: white;
+     border-color: rgb(88, 246, 233);
+     border-radius: 5px;
+     height: 25px;
+     width: 80px;
+
+ }
+
+ .input {
+     color: white;
+     background-color: black;
+     border: 2px double rgb(120, 120, 120);
+     border-radius: 5px;
+     padding: 5px;
+     margin-right: 15px;
+     height: 25px;
+     
+
+ }
+
+ .b-input {
+     color: white;
+     background-color: black;
+     border: 2px double rgb(76, 76, 76);
+     border-radius: 5px;
+     padding: 5px;
+     margin-right: 10px;
+     height: 40px;
+     
+ }
+ .b-input:hover{
+    font-size: 15px;
+    text-decoration: underline;
+    color: rgb(88, 246, 233);
+    border: 2px double white;
+
+ }
+ nav{
+    position: sticky;
+    top:0px;
+    height: 35px;
+    width: auto;
+ }
+
+@media (max-width: 933px){
+    .flex-1{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    }
+    @media (min-width: 680px) and (max-width: 933px) {
+        .flex-1{
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+        }
+      .flex-2{
+        flex-direction: column;
+            height: fit-content;
+  }     
+          
+}
+@media  (max-width: 680px) {
+    .flex-1{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+  .flex-2{
+    flex-direction: column;
+        height: fit-content;
+}     
+.flex-3{
+    flex-direction: column;
+        height: fit-content;
+        
+}     
+nav{
+    width: 120%;
+}
+
+      
+}
+
+ /*---------------------------- video section ---------------------*/
+ video{
+    
+    height: 700px;
+    margin-top: 20px;
+    margin-left: 100px;
+    box-shadow: 1px 1px 2px black, 0 0 25px rgb(14, 239, 255),0 0 5px rgb(1, 105, 117);
+    
+ }
+ .video{
+    width: 80%;
+    margin: auto;
+ }
+ .video h1{
+    color: azure;
+    text-shadow: 2px 2px 4px whitesmoke;
+ }
+ @media screen and (max-width="576px"){
+    video{
+        width: 90%;
+        margin:auto
+       
+    }
+ }
+
+ /* --------------------------- product section ---------------------- */
+ .title{
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px whitesmoke;
+ }
+ .grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    row-gap: 35px;
+    
+ }
+    /****************** items **********************/
+.card{
+    justify-self: center;
+    width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(237, 235, 235, 0.714), 0 6px 20px 0 rgba(222, 221, 221, 0.664);
+  background-color: aliceblue;
+}
+.img{
+    width: 250px;
+    height: fit-content;
+}
+.ligne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 7px;
+    margin-left: 7px;
+
+}
+.ligne p{
+    font-weight:600;
+}
+
+.button{
+    margin: 10px;
+    color: white;
+     background-color: black;
+     border: 2px double rgb(76, 76, 76);
+     border-radius: 5px;
+     padding: 5px;
+     height: 35px;
+
+}
+.button:hover{
+    font-size: 12px;
+    text-decoration: underline;
+    color: rgb(88, 246, 233);
+    box-shadow: 1px 1px 2px black, 0 0 25px rgb(14, 239, 255),0 0 5px rgb(1, 105, 117);
+
+ }
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+       width: 500px;
+    }
+    .card{
+        justify-self: center;
+       
+
+    }
+}
+ @media (min-width: 576px) and (max-width: 768px) {
+        .grid{
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+            width: 500px;
+        }
+        .card{
+            justify-self: center;
+            
+        }
+          
+}
+@media (max-width: 576px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        width: 500px;}
+    .card{
+        justify-self: center;
+        ;}
+}
+
+/* *********** footer ********** */
+footer{
+    color: aliceblue;
+    background: rgb(51, 159, 159);
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    box-shadow: 3px 3px 6px rgb(136, 237, 232), 3px 3px 6px rgb(185, 241, 229);
+
+}
+.footer{
+    justify-self: center;
+    background-color:rgb(51, 159, 159) ;
+}
+footer div h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer div p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fcb{
+    margin-bottom: 2px;
+}
+@media (max-width: 576px){
+    footer{
+        flex-direction: column;
+        height: 100%;
+        width: 500px;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+
+/************** delivery *********/
+#delivery {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#delivery h2 {
+    color: #333;
+}
+
+#delivery p {
+    color: #666;
+}
+
+#delivery ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#delivery li {
+    margin: 10px 0;
+}
+
+#delivery button {
+    margin: 10px;
+    color: white;
+     background-color: black;
+     border: 2px double rgb(76, 76, 76);
+     border-radius: 5px;
+     padding: 5px;
+     height: 40px;
+}
+
+#delivery button:hover {
+    font-size: 15px;
+    text-decoration: underline;
+    color: rgb(88, 246, 233);
+    border: 2px double white;
+}
